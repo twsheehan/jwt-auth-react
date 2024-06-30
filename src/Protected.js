@@ -1,9 +1,9 @@
-import React from 'react';
-import { Navigate } from 'react-router-dom';
+import React from "react";
+import { Navigate } from "react-router-dom";
 
 const Protected = ({ children }) => {
   function hasJWT() {
-    if(localStorage.getItem("token")){
+    if (localStorage.getItem("token")) {
       return true;
     } else {
       return false;
